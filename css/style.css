@@ -1,6 +1,7 @@
 /* GLOBAL VARIABLES */
 :root {
   --primary-color: #e50914;
+  --dark-color: #141414;
 }
 
 /* RESET */
@@ -113,9 +114,33 @@ img {
   box-shadow: inset 120px 100px 250px #000, inset -120px -100px 250px #000;
 }
 
+/* TABS */
+.tabs {
+  background: var(--dark-color);
+  padding-top: 1rem;
+  border-bottom: 3px solid #3d3d3d;
+}
+
+/* grid parent is contaner */
+.tabs .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 /* UTILITY CLASSES */
 
 /* BUTTONS */
+.container {
+  max-width: 70%;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
 .btn {
   display: inline-block;
   background: var(--primary-color);
